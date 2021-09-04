@@ -34,7 +34,6 @@ class sendMail():
         self.mail.starttls()
         self.mail.login("youremail@mail.com", "youremailPassword")
 
-
 class connection():
 
     def __init__(self):
@@ -533,12 +532,12 @@ if __name__ == '__main__':
     stacked_widget.addWidget(forgotid)
     stacked_widget.addWidget(resetpassword)
 
-    stacked_widget.setWindowTitle("Login by sensoyg")
+    stacked_widget.setWindowTitle("Login With Python")
     stacked_widget.setWindowIcon(QtGui.QIcon(icon_path))
     stacked_widget.setFixedSize(640, 450)
     stacked_widget.show()
 
     trayIcon = QtWidgets.QSystemTrayIcon(QtGui.QIcon(icon_path), parent=app)
-    trayIcon.setToolTip("Login bu sensoyg working...")
+    trayIcon.setToolTip("Login by sensoyg working...")
     trayIcon.show()
     sys.exit(app.exec_())
