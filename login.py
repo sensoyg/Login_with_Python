@@ -77,7 +77,7 @@ class Enter(QtWidgets.QDialog):
         self.register_button.clicked.connect(self.click)
         self.login_button.clicked.connect(self.click2)
 
-        self.label = QtWidgets.QLabel("Login by sensoyg")
+        self.label = QtWidgets.QLabel("Login")
 
         self.label.setFont(QFont("Arial", 12))
         self.login_button.setFixedSize(200, 70)
